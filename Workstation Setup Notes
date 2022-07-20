@@ -2,6 +2,12 @@
 
 #> install-module -name vmware.powercli confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
 
+1a. allow untrusted certs
+#> set-powercliconfiguration -invalidatecertificateaction ignore -confirm:$false
+
+1b. set script running to unrestricted
+#> set-executionpolicy unrestricted
+
 2. install inspec
 https://www.chef.io/downloads/tools/inspec
 
