@@ -1,3 +1,8 @@
+Link to VMware docs / SOP
+https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=ISBU&title=Compliance+Automation+Utility 
+
+
+
 1. run the following to get powercli to install properly in a government environment
 
 #> install-module -name vmware.powercli confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
