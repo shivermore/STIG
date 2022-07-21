@@ -1,6 +1,3 @@
-Link to VMware docs / SOP
-https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=ISBU&title=Compliance+Automation+Utility 
-
 1. run the following to get powercli to install properly in a government environment
 
 #> install-module -name vmware.powercli -confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
@@ -30,3 +27,7 @@ $env:VISERVER_PASSWORD="password"
 
 To convert .json to .ckl
 #> inspec_tools inspec2ckl -j file.json -o file.ckl
+
+Link to VMware docs / SOP
+https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=ISBU&title=Compliance+Automation+Utility 
+Note: The Connect-VCFServer cmdlet is available after running the ComplianceUtility.psd1 found in ComplianceAutomationUtility.zip
