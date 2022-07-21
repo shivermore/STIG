@@ -5,7 +5,7 @@ https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=ISBU&title=Comp
 
 1. run the following to get powercli to install properly in a government environment
 
-#> install-module -name vmware.powercli confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
+#> install-module -name vmware.powercli -confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
 
 1a. allow untrusted certs
 #> set-powercliconfiguration -invalidatecertificateaction ignore -confirm:$false
