@@ -28,6 +28,8 @@ $env:VISERVER_PASSWORD="password"
 To convert .json to .ckl
 #> inspec_tools inspec2ckl -j file.json -o file.ckl
 
+Don't forget to install the DISA STIG viewer
+
 Link to VMware docs / SOP
 https://confluence.eng.vmware.com/pages/viewpage.action?spaceKey=ISBU&title=Compliance+Automation+Utility 
 Note: The Connect-VCFServer cmdlet is available after running the ComplianceUtility.psd1 found in ComplianceAutomationUtility.zip
