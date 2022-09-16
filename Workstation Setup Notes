@@ -1,6 +1,9 @@
-1. run the following to get powercli to install properly in a government environment
+1. run the following to get powercli / powervcf to install properly in a government environment
 
 #> install-module -name vmware.powercli -confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
+#> install-module -name powervcf -confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
+#> install-module -name importexcel -confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
+#> install-module -name VMware.vSphere.SsoAdmin -confirm:$false -allowclobber -force -scope currentuser -skippublishercheck
 
 1a. allow untrusted certs
 #> set-powercliconfiguration -invalidatecertificateaction ignore -confirm:$false
